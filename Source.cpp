@@ -6,7 +6,7 @@ using namespace std;
 int main(){
 HKEY hkey;
 LONG regoOpenResult;
-WCHAR PATH[] = L"C:\\Users\\testdirect3\\caller.bat";
+WCHAR PATH[] = L"C:\\Users\\NAME\\testdirect3\\NameOfFile";
 
 regoOpenResult = RegOpenKeyEx(HKEY_CURRENT_USER, L"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", 0, KEY_ALL_ACCESS, &hkey);
 
@@ -17,4 +17,9 @@ RegCloseKey(hkey);
 
 
 }
+
+
+
+
+
 
